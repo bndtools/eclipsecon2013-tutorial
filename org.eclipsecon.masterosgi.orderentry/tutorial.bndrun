@@ -9,10 +9,12 @@
 	org.eclipsecon.masterosgi.api;version=latest,\
 	org.eclipsecon.masterosgi.exchange;version=latest,\
 	org.eclipsecon.masterosgi.orderentry;version=latest,\
+	org.eclipsecon.masterosgi.ticker;version=latest,\
 	osgi.cmpn;version='[4.2.0,4.2.1)'
 
 -runrequires: osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.exchange)',\
-	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.orderentry)'
+	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.orderentry)',\
+	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.ticker)'
 -resolve.effective: active

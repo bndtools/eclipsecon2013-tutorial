@@ -2,3 +2,5 @@
 	org.eclipsecon.masterosgi.api,\
 	com.google.guava,\
 	biz.aQute.bnd.annotation
+Service-Component: *
+Private-Package: org.eclipsecon.masterosgi.ticker
