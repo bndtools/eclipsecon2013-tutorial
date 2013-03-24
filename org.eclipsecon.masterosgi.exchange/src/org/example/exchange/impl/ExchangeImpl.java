@@ -98,4 +98,9 @@ public class ExchangeImpl implements Exchange {
 		return Collections.unmodifiableList(orders);
 	}
 
+	public void cancelOrder(Order order) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
