@@ -46,6 +46,8 @@ public class OrderEntry {
 			.setUnitPrice(price)
 			.build();
 		exchange.submitOrder(newOrder);
+		
+		exchange.cancelOrder(newOrder);
 	}
 
 	@Activate
