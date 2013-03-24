@@ -3,4 +3,4 @@
 	biz.aQute.bnd.annotation
 Export-Package: org.example.exchange.api,\
 	org.example.model.orders
-Bundle-Version: 1.0.0
+Bundle-Version: 1.1.0
