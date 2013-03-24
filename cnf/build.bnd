@@ -1,0 +1,13 @@
+# Place your specific settings here.
+
+# Default settings are in ext/*.bnd and they will be overridden by anything
+# you specify in this file.
+
+-plugin:\
+	aQute.bnd.deployer.repository.LocalIndexedRepo; name=Release;        local=${build}/releaserepo,\
+	aQute.bnd.deployer.repository.LocalIndexedRepo; name=Local;          local=${build}/localrepo,\
+	aQute.lib.deployer.FileRepo;     name=Build;          location=${build}/buildrepo,\
+	aQute.bnd.deployer.repository.FixedIndexedRepo;      name=Aries;          locations=file:///${build}/ariesrepo/index.xml.gz,\
+	aQute.bnd.deployer.repository.FixedIndexedRepo; name=GeminiJPA;           locations=file:///${build}/gemini-jpa/index.xml.gz
+
+-releaserepo:   Release
