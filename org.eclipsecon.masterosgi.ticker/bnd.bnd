@@ -1,0 +1,4 @@
+-buildpath: ee.j2se,\
+	org.eclipsecon.masterosgi.api,\
+	com.google.guava,\
+	biz.aQute.bnd.annotation

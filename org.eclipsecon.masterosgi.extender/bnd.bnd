@@ -1,0 +1,9 @@
+-buildpath: ee.j2se,\
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bndlib,\
+	junit.osgi
+
+Private-Package: org.eclipsecon.masterosgi.extender
+Conditional-Package: aQute.lib.*
+Service-Component: *
