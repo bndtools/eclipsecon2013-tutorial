@@ -1,11 +1,16 @@
 -runfw: org.apache.felix.framework;version='[4,5)'
 -runee: JavaSE-1.6
 
--runbundles: com.google.protobuf;version='[2.4.1,2.4.2)',\
+-runbundles: aQute.xray.plugin;version='[1.0.0,1.0.1)',\
+	com.google.protobuf;version='[2.4.1,2.4.2)',\
+	org.apache.felix.configadmin;version='[1.2.8,1.2.9)',\
 	org.apache.felix.gogo.command;version='[0.12.0,0.12.1)',\
 	org.apache.felix.gogo.runtime;version='[0.10.0,0.10.1)',\
 	org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)',\
+	org.apache.felix.http.jetty;version='[2.2.0,2.2.1)',\
+	org.apache.felix.metatype;version='[1.0.4,1.0.5)',\
 	org.apache.felix.scr;version='[1.6.2,1.6.3)',\
+	org.apache.felix.webconsole;version='[3.1.8,3.1.9)',\
 	org.eclipsecon.masterosgi.api;version=latest,\
 	org.eclipsecon.masterosgi.exchange;version=latest,\
 	org.eclipsecon.masterosgi.orderentry;version=latest,\
@@ -16,5 +21,8 @@
 	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
 	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.exchange)',\
 	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.orderentry)',\
-	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.ticker)'
+	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.ticker)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.webconsole)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.configadmin)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.metatype)'
 -resolve.effective: active
