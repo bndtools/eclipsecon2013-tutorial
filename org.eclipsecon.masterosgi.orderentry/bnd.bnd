@@ -6,3 +6,6 @@
 	
 Private-Package: org.eclipsecon.masterosgi.orderentry
 Service-Component: *
+
+Include-Resource: help.txt
+Require-Capability: osgi.extender; filter:="(osgi.extender=helper)"; effective:=active
