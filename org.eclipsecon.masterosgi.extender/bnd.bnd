@@ -7,3 +7,4 @@
 Private-Package: org.eclipsecon.masterosgi.extender
 Conditional-Package: aQute.lib.*
 Service-Component: *
+Provide-Capability: osgi.extender; osgi.extender=helper; version:Version=1.0
