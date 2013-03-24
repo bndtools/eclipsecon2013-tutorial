@@ -1,12 +1,18 @@
 -runfw: org.apache.felix.framework;version='[4,5)'
 -runee: JavaSE-1.6
 
--runbundles:\
-	org.apache.felix.gogo.runtime,\
-	org.apache.felix.gogo.shell,\
-	org.apache.felix.gogo.command
+-runbundles: com.google.protobuf;version='[2.4.1,2.4.2)',\
+	org.apache.felix.gogo.command;version='[0.12.0,0.12.1)',\
+	org.apache.felix.gogo.runtime;version='[0.10.0,0.10.1)',\
+	org.apache.felix.gogo.shell;version='[0.10.0,0.10.1)',\
+	org.apache.felix.scr;version='[1.6.2,1.6.3)',\
+	org.eclipsecon.masterosgi.api;version=latest,\
+	org.eclipsecon.masterosgi.exchange;version=latest,\
+	org.eclipsecon.masterosgi.orderentry;version=latest,\
+	osgi.cmpn;version='[4.2.0,4.2.1)'
 
--runrequires:\
-	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
-	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)'
+-runrequires: osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.shell)',\
+	osgi.identity;filter:='(osgi.identity=org.apache.felix.gogo.command)',\
+	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.exchange)',\
+	osgi.identity;filter:='(osgi.identity=org.eclipsecon.masterosgi.orderentry)'
 -resolve.effective: active
