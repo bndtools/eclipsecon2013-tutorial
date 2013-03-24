@@ -21,7 +21,7 @@ import aQute.bnd.annotation.component.Reference;
 import aQute.bnd.annotation.metatype.Configurable;
 import aQute.bnd.annotation.metatype.Meta;
 
-@Component(name = "org.example.exchange.server")
+@Component(name = "org.example.exchange.server", designateFactory = ExchangeImpl.Config.class)
 public class ExchangeImpl implements Exchange {
 	
 	static interface Config {

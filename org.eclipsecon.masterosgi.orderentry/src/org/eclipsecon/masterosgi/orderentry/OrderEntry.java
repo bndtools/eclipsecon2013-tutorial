@@ -24,7 +24,7 @@ public class OrderEntry {
 	
 	private Exchange exchange;
 
-	@Reference
+	@Reference(target = "(name=NASDAQ)")
 	public void setExchange(Exchange exchange) {
 		this.exchange = exchange;
 	}
