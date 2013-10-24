@@ -1,0 +1,6 @@
+-buildpath: ee.j2se,\
+	com.google.protobuf,\
+	biz.aQute.bnd.annotation
+Export-Package: org.example.exchange.api,\
+	org.example.model.orders
+Bundle-Version: 1.0.0

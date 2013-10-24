@@ -1,0 +1,8 @@
+-buildpath: osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	org.eclipsecon.masterosgi.api,\
+	com.google.protobuf
+	
+Private-Package: org.eclipsecon.masterosgi.orderentry
+Service-Component: *

@@ -1,0 +1,9 @@
+-buildpath: ee.j2se,\
+	org.eclipsecon.masterosgi.api;version=latest,\
+	biz.aQute.bnd.annotation,\
+	com.google.protobuf
+
+Service-Component: *
+Private-Package: org.example.exchange.impl
+Provide-Capability: osgi.service;objectClass=org.example.exchange.api.Exchange
+Conditional-Package: aQute.bnd.*
