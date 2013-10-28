@@ -12,4 +12,6 @@ public interface Exchange {
 	void submitOrder(Order order) throws Exception;
 	
 	Collection<Order> getAllOrders();
+	
+	void cancelOrder(Order order);
 }
